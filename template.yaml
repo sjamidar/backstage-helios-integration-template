@@ -60,14 +60,9 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:github,gitlab
       input:
-        allowedHosts: ['github.com']
-        description: 'This is {{ parameters.component_id }}'
-        repoUrl: '{{ parameters.repoUrl }}'
-      action: publish:gitlab
-      input:
-        allowedHosts: ['gitlab.webmd.com']
+        allowedHosts: ['github.com','gitlab.webmd.com']
         description: 'This is {{ parameters.component_id }}'
         repoUrl: '{{ parameters.repoUrl }}'
 
