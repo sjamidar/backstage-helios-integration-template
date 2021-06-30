@@ -60,7 +60,8 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github,gitlab
+      action: publish:github
+      action: publish:gitlab
       input:
         allowedHosts: ['github.com','gitlab.webmd.com']
         description: 'This is {{ parameters.component_id }}'
