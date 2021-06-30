@@ -65,8 +65,8 @@ spec:
         allowedHosts: ['github.com']
         description: 'This is {{ parameters.component_id }}'
         repoUrl: '{{ parameters.repoUrl }}'
-        action: publish:gitlab
-        input:
+      action: publish:gitlab
+      input:
         allowedHosts: ['gitlab.webmd.com']
         description: 'This is {{ parameters.component_id }}'
         repoUrl: '{{ parameters.repoUrl }}'
